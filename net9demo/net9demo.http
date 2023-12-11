@@ -1,0 +1,6 @@
+@net9demo_HostAddress = http://localhost:5258
+
+GET {{net9demo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
