@@ -18,11 +18,6 @@ namespace net9demo.Repositories
             using IDbConnection connection = new SqlConnection(constr);
             string query = "select * from Person";
             var people = await connection.QueryAsync<Person>(query);
-            //var people = new List<Person>()
-            //{
-            //    new Person{Name="ravindra",Age=31,Email="ravindra@gmail.com"},
-            //    new Person{Name="sattu",Age=34,Email="sattu@gmail.com"},
-            //};
             return people;
         } 
     }
