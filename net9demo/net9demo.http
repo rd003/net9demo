@@ -1,6 +1,8 @@
-@net9demo_HostAddress = http://localhost:5258
+POST https://localhost:7093/api/categories
+Content-Type: application/json
 
-GET {{net9demo_HostAddress}}/weatherforecast/
-Accept: application/json
+{
+  "id": 0,
+  "name": "2"
+}
 
-###
